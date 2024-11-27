@@ -23,12 +23,12 @@ body{
 
 header
 {
-background-color: beige;
+background-color: rgb(255, 255, 255);
 padding-top: 20px;
 padding-bottom: 20px;
-border-bottom: 15px solid rgb(134, 134, 91);
-border-radius: 15px;
+border-bottom: 5px solid rgb(144, 144, 144);
 }
+
 .logo
 {
 	display: flex;
@@ -42,32 +42,39 @@ nav, ul,li
 }
 .boutton-menu:hover
 {
-    background-color: blueviolet;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: smaller;
-    text-decoration: underline;
-    border-bottom: 5px solid rgb(64, 18, 107);
-    display: inline-block; 
-	margin-right: 10px;
+text-decoration: underline;
 }
 .boutton-menu
 {
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: smaller;
+   
+    color: rgb(9, 9, 9);
+    font-size: xx-large;
     text-decoration: none;
-    border-bottom: 5px solid rgb(9, 4, 142);
     display: inline-block; 
-	margin-right: 10px;
+	margin-right: 50px;
 }
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
 
+.album-1
+{
+margin-top: 20px;
+grid-area:al-1;
+}
+.album-2
+{
+	margin-top: 20px;
+	grid-area:al-2;
+}
+#grid-containeur
+{
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
+"al-1 tx"
+"al-2 tx";
 
+}
 
 /* Formulaires
 ========================================================================== */
