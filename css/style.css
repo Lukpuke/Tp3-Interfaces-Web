@@ -28,6 +28,7 @@ header {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border-bottom: 5px solid rgb(144, 144, 144);
+	margin-bottom: 50px;
 }
 
 .logo {
@@ -56,6 +57,7 @@ li {
 	margin-right: 50px;
 }
 footer {
+	margin-top: 50px;
 	background-color: black;
 	color:white;
 	font-size: larger;
@@ -98,6 +100,21 @@ footer {
 }
 .fin{
 	text-align: center;
+}
+.theme{
+	background-color: black;
+	font-size: xx-large;
+	color:white;
+}
+.grid-disques{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid{
+grid-column: span 1;
+}
+img{
+	max-width: 100%;
 }
 
 /* Formulaires
