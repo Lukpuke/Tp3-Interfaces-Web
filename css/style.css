@@ -2,7 +2,9 @@
 	box-sizing: border-box;
 }
 
-
+.menu-mobile{
+	display: none;
+}
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
 
@@ -151,37 +153,44 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-.grid-section{
+
+.grid-section {
 	font-size: x-large;
 	background-color: rgb(212, 209, 209);
 	align-content: center;
 	padding-left: 20px;
-	padding-right:20px;
+	padding-right: 20px;
 }
-.prix{
-	color:red;
+
+.prix {
+	color: red;
 }
-.mots-cle{
+
+.mots-cle {
 	font-size: larger;
-	border:2px solid blue;
-	color:blue;
+	border: 2px solid blue;
+	color: blue;
 	text-decoration: none;
 }
-.section-normal{
+
+.section-normal {
 	background-color: rgb(212, 209, 209);
 	padding-left: 20px;
-	padding-right:20px;
-	margin-right:10px;
+	padding-right: 20px;
+	margin-right: 10px;
 	margin-bottom: 10px;
 }
-.recherche{
-	padding-right: 70px ;
+
+.recherche {
+	padding-right: 70px;
 }
-th{
+
+th {
 	border: 2px solid black;
 	background-color: grey;
 }
-td{
+
+td {
 	border: 2px solid black;
 	background-color: white;
 }
@@ -193,3 +202,47 @@ td{
 
 /* Règles spécifiques aux pages
 ========================================================================== */
+
+/*Le responsive
+========================================================================== */
+
+@media screen and (max-width:850px) {
+	#grid-container img {
+		width: 100%;
+	}
+	.album-1{
+		display: none;
+	}
+	.album-2{
+		display:none;
+	}
+	.album-3{
+		grid-row-end: 5;
+	}
+	.album-4{
+		grid-row-end: 4;
+	}
+	.album-5{
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+	.section {
+		grid-row-start: 1;
+		grid-column: span 4;
+		padding-bottom: 2rem;
+	}
+}
+@media screen and (max-width:960px) {
+	nav{
+		display:none;
+	}
+	.menu-mobile{
+		display: block;
+	}
+}
+@media screen and (max-width:610px) {
+	.section{
+		font-size: smaller;
+		padding-left: 1rem;
+	}
+}
