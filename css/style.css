@@ -195,10 +195,31 @@ td {
 	background-color: white;
 }
 
+
+
 /* Formulaires
 ========================================================================== */
 
-
+.grid-formulaire{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+.formulaire-1{
+	background-color: rgb(212, 209, 209);
+	margin-right: 2rem;
+}
+.formulaire-2{
+	margin-left: 2rem;
+	background-color: rgb(212, 209, 209);
+}
+#soumettre{
+	background-color: black;
+	color:white;
+}
+.right{
+	margin-top: 5rem;
+	text-align: center;
+}
 
 /* Règles spécifiques aux pages
 ========================================================================== */
@@ -207,6 +228,16 @@ td {
 ========================================================================== */
 
 @media screen and (max-width:850px) {
+	.right{
+		text-align: left;
+	}
+	.formulaire-1{
+		margin-right:0rem ;
+	}
+	.formulaire-2{
+		margin-left:0rem;
+		grid-row: end;
+	}
 	#grid-container img {
 		width: 100%;
 	}

@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-        <img src="../img/logo-sillon.svg" alt="Le logo de l'entreprise">
-        <nav>
-            <ul>
-                <li><a class="boutton-menu" href="Disques.html">Disques</a></li>
-                <li><a class="boutton-menu" href="vendre-un-disque.html">Vendre un disque</a></li>
-                <li><a class="boutton-menu" href="../index.html">Mon compte</a></li>
-            </ul>
-        </nav>
-    </div>
+            <img src="../img/logo-sillon.svg" alt="Le logo de l'entreprise">
+            <nav>
+                <ul>
+                    <li><a class="boutton-menu" href="Disques.html">Disques</a></li>
+                    <li><a class="boutton-menu" href="vendre-un-disque.html">Vendre un disque</a></li>
+                    <li><a class="boutton-menu" href="../index.html">Mon compte</a></li>
+                </ul>
+            </nav>
+            <a class="menu-mobile" href=""><img src="../img/menu-mobile.svg" alt=""></a>
+        </div>
     </header>
-        <main>
-    
-        </main>
-        <footer>
-            <p><strong>Sillon</strong> : 1660 Boul. de l'Entente, Québec</p>
-            <a class="telephone" href="tel:4181234567">418-123-4567</a>
-        </footer>
+    <main>
+        <div class="container">
+            <form action="../index.html">
+            <div class="grid-formulaire">
+               
+                <section class="formulaire-1">
+                    
+                        <p><strong>Quelle est le nom de l'album</strong></p>
+                        <input type="text" name="Nom-album" placeholder="Nom de l'album" required>
+                        <br>
+                        <p><strong>Quelle est le nom de l'artiste</strong></p>
+                        <input type="text" name="Nom-artiste" placeholder="Nom de l'artiste" required>
+                        <p><strong>Style de musique</strong></p>
+                        <input type="checkbox" name="ckb-liste"><label for="">Rock</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Pop</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Hip-hop</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Électro</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Métal</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Punk</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Jazz</label>
+                        <br>
+                        <input type="checkbox" name="ckb-liste"><label for="">Clasique</label>
+                    
+                </section>
+                <section class="formulaire-2">
+                    <p><strong>Quelle est la qualité de votre disque</strong></p>
+                   
+                        <select name="sel-qualité" required>
+                            <option value="Exellente">Exellente</option>
+                            <option value="Bonne">Bonne</option>
+                            <option value="Passable">Passable</option>
+                            <option value="Basse">Basse</option>
+                        </select>
+                        <p><strong>Quelle est la date de parution</strong></p>
+                        <input type="date" name="date-parution" required>
+                        <p><Strong>L'image de la pochette</Strong></p>
+                        <input type="image" alt="image de la pochette" required>
+                        <p><strong>La description de l'album(optionnelle)</strong></p>
+                        <textarea name="" id=""></textarea>
+                </section>
+            </div>
+            <div class="right">
+
+                <input id="soumettre" type="submit" value="Soumettre">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p><strong>Sillon</strong> : 1660 Boul. de l'Entente, Québec</p>
+        <a class="telephone" href="tel:4181234567">418-123-4567</a>
+    </footer>
     <section>
-        <p class="fin">Site réalisé par : <strong>Lukas Aubé</strong> | Dans le cadre du proggramme Techniques de l'informatique - Cégep Garneau</p>
+        <p class="fin">Site réalisé par : <strong>Lukas Aubé</strong> | Dans le cadre du proggramme Techniques de
+            l'informatique - Cégep Garneau</p>
     </section>
 </body>
+
 </html>
